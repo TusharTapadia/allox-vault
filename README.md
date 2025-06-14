@@ -1,14 +1,15 @@
-# Sample Hardhat Project
+# ALLO-X Vault Protocol
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This project mimics an onchain vault deployed for real world assets like stocks. 
+
+The project is structred in such a way that user deploys a vault in a particular chain and add oracles aggregator which can be chainlink or a fork of chainlink. 
+This fetches the prices from these oracles and then use them to issue or burn tokens according to vault structure. 
+
+This has contracts.
 
 Try running some of the following tasks:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+npm i --legacy-peer-deps
 ```
 # allox-vault
